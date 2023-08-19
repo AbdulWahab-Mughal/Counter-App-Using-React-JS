@@ -1,0 +1,28 @@
+
+.New{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    margin-top: 25px;
+    height: 50vh;
+    background: rgb(39, 35, 35);
+    width: 35% !important;
+}
+.head{
+    color: aliceblue;
+    font-size: 50px;
+}
+.Btn{
+    width: 35%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* flex-direction: row; */
+}
+button{
+    font-size: 25px !important;
+    margin: 5px !important;
+    padding:18px 26px !important;
+}
