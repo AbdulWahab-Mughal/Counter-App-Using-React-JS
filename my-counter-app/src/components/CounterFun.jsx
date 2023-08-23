@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './CounterFun.css'
+import "./CounterFun.css";
 
 const CounterFun = () => {
   let [Count, setCount] = useState(0);
@@ -10,11 +10,17 @@ const CounterFun = () => {
     if (Count > 0) {
       setCount(--Count);
     }
-    
+  };
+  const [toggle, setToggle] = useState(false);
+  const onClickHandler = () => {
+    setToggle(!toggle);
   };
   return (
     <>
-      <div className=" container New">
+      <div className="center">
+        <input type="checkbox" onClick={onClickHandler} />
+      </div>
+      <div className="container New" id={`${toggle ? "Dark1" : "Light1"}`}>
         <h1 className="head">{Count}</h1>
         <div className="Btn">
           <button className="btn btn-primary" onClick={incrementHandler}>

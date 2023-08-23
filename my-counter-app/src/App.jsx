@@ -8,8 +8,9 @@ import CounterFun from './components/CounterFun'
 function App() {
   return (
     <>
-    <Heading title="My-Counter App"/>
+    <Heading title="CounterApp"/>
     <CounterFun/>
+  
           </>
   )
 }
